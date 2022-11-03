@@ -4,7 +4,7 @@ import bsaeUrl.RequseBaseUrl;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.Test;
-import test_data.ReqresInData;
+import test_data.ReqresInUsersData;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -40,7 +40,7 @@ public class CalismaTestData2 extends RequseBaseUrl {
         spec.pathParams("first","users","second",2);
 
         //set the expected data
-        ReqresInData obj= new ReqresInData();
+        ReqresInUsersData obj= new ReqresInUsersData();
         Map<String,String> data=obj.dataMethod("janet.weaver@reqres.in","Janet","Weaver","https://reqres.in/img/faces/2-image.jpg");
         Map<String,String>support=obj.supportMethod("https://reqres.in/#support-heading","To keep ReqRes free, contributions towards server costs are appreciated!");
 
