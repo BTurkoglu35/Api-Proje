@@ -1,12 +1,11 @@
 package Calisma;
 
-import bsaeUrl.RequseBaseUrl;
+import bsaeUrl.ReqresInBaseUrl;
 import io.restassured.response.Response;
 import org.junit.Test;
 
 import org.testng.asserts.SoftAssert;
 import test_data.ReqresInUnkownData;
-import test_data.ReqresInUsersData;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,7 +14,7 @@ import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
 
-public class CalismaSoftAssert extends RequseBaseUrl {
+public class CalismaSoftAssert extends ReqresInBaseUrl {
     /*
         Given
           https://reqres.in/api/unknown/3

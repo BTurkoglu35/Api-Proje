@@ -23,5 +23,16 @@ public class RestfullData {
         return dataMap;
     }
 
+    public Map<String,Object> postMethod(String firstname,String lastname,Integer totalprice,Boolean depositpaid,Map<String,String>bookingdates){
+        Map<String,Object> dataMap = new HashMap<String,Object>();
+        dataMap.put("firstname",firstname);
+        dataMap.put("lastname",lastname);
+        dataMap.put("totalprice",totalprice);
+        dataMap.put("depositpaid",depositpaid);
+        dataMap.put("bookingdates",bookingdates);
+
+        return dataMap;
+    }
+
 
 }

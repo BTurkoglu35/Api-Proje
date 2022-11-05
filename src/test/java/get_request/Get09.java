@@ -1,6 +1,5 @@
 package get_request;
 
-import bsaeUrl.RequseBaseUrl;
 import bsaeUrl.RestfulBaseUrl;
 import io.restassured.response.Response;
 import org.junit.Test;

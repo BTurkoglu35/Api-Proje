@@ -1,6 +1,6 @@
 package Calisma;
 
-import bsaeUrl.RequseBaseUrl;
+import bsaeUrl.ReqresInBaseUrl;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.Test;
@@ -10,7 +10,7 @@ import java.util.List;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
-public class CalismaJson extends RequseBaseUrl {
+public class CalismaJson extends ReqresInBaseUrl {
      /*
 Given
     https://reqres.in/api/users

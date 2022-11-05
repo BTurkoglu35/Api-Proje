@@ -1,13 +1,13 @@
 package get_request;
 
-import bsaeUrl.RequseBaseUrl;
+import bsaeUrl.ReqresInBaseUrl;
 import io.restassured.response.Response;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
-public class Get02 extends RequseBaseUrl {
+public class Get02 extends ReqresInBaseUrl {
     /*
         Given
             https://reqres.in/api/users/23
@@ -37,7 +37,7 @@ public class Get02 extends RequseBaseUrl {
         assertEquals("HTTP/1.1 404 Not Found",response.statusLine());
         assertEquals("cloudflare",response.getHeader("Server"));
         System.out.println(response.body().asString().replaceAll("\\s","").length());
-        assertEquals(2, response.body().asString().replaceAll("\\s",""));
+        assertEquals(2, response.body().asString().replaceAll("\\s","").length());
 
     }
 

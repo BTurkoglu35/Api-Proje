@@ -1,6 +1,6 @@
 package get_request;
 
-import bsaeUrl.RequseBaseUrl;
+import bsaeUrl.ReqresInBaseUrl;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.Test;
@@ -8,7 +8,7 @@ import org.testng.asserts.SoftAssert;
 
 import static io.restassured.RestAssured.given;
 
-public class Get05 extends RequseBaseUrl {
+public class Get05 extends ReqresInBaseUrl {
      /*
         Given
           https://reqres.in/api/unknown/3

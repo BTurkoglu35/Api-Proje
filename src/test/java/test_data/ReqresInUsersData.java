@@ -20,4 +20,14 @@ public class ReqresInUsersData {
         return supportMap;
     }
 
+    public Map<String,String> usersPostPutData(String name, String job){
+        Map<String,String>usersMap = new HashMap<String,String>();
+        if(name != null){
+        usersMap.put("name",name);}
+        if (job != null){
+            usersMap.put("job",job);
+        }
+
+        return usersMap;
+    }
 }
