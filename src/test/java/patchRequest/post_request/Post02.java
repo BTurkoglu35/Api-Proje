@@ -1,4 +1,4 @@
-package post_request;
+package patchRequest.post_request;
 
 import bsaeUrl.RestfulBaseUrl;
 import io.restassured.http.ContentType;

@@ -1,5 +1,8 @@
 package pojos.restfulPojo;
 
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class BookingdatesPojo {
   // tum keyler icin private variablelar olusturuyoruz
     private String checkin;

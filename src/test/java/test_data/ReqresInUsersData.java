@@ -30,4 +30,16 @@ public class ReqresInUsersData {
 
         return usersMap;
     }
+
+    public String expectedDataInString(String name, String job){//Dinamik expected data methodu: Json datayı String bir container olarak return ediyor.
+        String expectedData = " {\n" +
+                "                 \"name\": "+name+",\n" +
+                "                 \"job\": "+job+"\n" +
+                "               }";
+
+
+
+        return expectedData;
+    }
+
 }
