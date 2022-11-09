@@ -15,6 +15,10 @@ public class RequesUsersPojo {
     public RequesUsersPojo() {
     }
 
+    public RequesUsersPojo(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
@@ -38,4 +42,6 @@ public class RequesUsersPojo {
                 ", job='" + job + '\'' +
                 '}';
     }
+
+
 }

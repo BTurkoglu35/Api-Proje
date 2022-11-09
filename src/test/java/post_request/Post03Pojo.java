@@ -1,4 +1,4 @@
-package patchRequest.post_request;
+package post_request;
 
 import bsaeUrl.JsonplaceholderBaseUrl;
 import io.restassured.http.ContentType;

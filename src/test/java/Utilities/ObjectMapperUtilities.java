@@ -9,16 +9,24 @@ import java.io.IOException;
 public class ObjectMapperUtilities {
 
     private static ObjectMapper mapper;
-    static{
-        mapper=new ObjectMapper();
+    //new ObjectMapper().readValue(jsonInString, HashMap .class);
+
+
+
+    static {
+        mapper = new ObjectMapper();
     }
-    public static <T> T convertJsonToJava(String json,Class<T> type) {//generic method
-      T javaResult=null;
+
+    public static <T> T convertJsonToJava(String json, Class<T> cls){//Generic Method
+
+        T javaResult = null;
+
         try {
-         javaResult=mapper.readValue(json,type);
+            javaResult = mapper.readValue(json,cls);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-     return javaResult;
+
+        return javaResult;
     }
 }

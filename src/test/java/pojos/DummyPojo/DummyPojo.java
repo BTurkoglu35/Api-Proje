@@ -1,5 +1,8 @@
 package pojos.DummyPojo;
 
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class DummyPojo {
     private String status;
     private DummyDataPojo data;

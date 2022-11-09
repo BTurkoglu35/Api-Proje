@@ -1,14 +1,17 @@
 package pojos.DummyPojo;
 
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class DummyDataPojo {
-    private Integer id;
+
     private String employee_name;
     private Integer employee_salary;
     private Integer employee_age;
     private String profile_image;
 
-    public DummyDataPojo(Integer id, String employee_name, Integer employee_salary, Integer employee_age, String profile_image) {
-        this.id = id;
+    public DummyDataPojo(String employee_name, Integer employee_salary, Integer employee_age, String profile_image) {
+
         this.employee_name = employee_name;
         this.employee_salary = employee_salary;
         this.employee_age = employee_age;
@@ -18,13 +21,9 @@ public class DummyDataPojo {
     public DummyDataPojo() {
     }
 
-    public Integer getId() {
-        return id;
-    }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+
+
 
     public String getEmployee_name() {
         return employee_name;
@@ -61,8 +60,7 @@ public class DummyDataPojo {
     @Override
     public String toString() {
         return "DummyDataPojo{" +
-                "id=" + id +
-                ", employee_name='" + employee_name + '\'' +
+                "employee_name='" + employee_name + '\'' +
                 ", employee_salary=" + employee_salary +
                 ", employee_age=" + employee_age +
                 ", profile_image='" + profile_image + '\'' +
